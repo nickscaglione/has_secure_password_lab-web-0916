@@ -1,0 +1,8 @@
+Register as a new user:
+
+<%= form_tag "/create" do %>
+  <%= text_field_tag :username, nil, placeholder: "Username" %>
+  <%= password_field_tag :password, nil, placeholder: "Password" %>
+  <%= password_field_tag :password_confirmation, nil, placeholder: "Confirm password" %>
+  <%= submit_tag "Register" %>
+<% end %>

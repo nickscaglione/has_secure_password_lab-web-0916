@@ -1,0 +1,7 @@
+Login page
+
+<%= form_tag '/session/create' do %>
+  <%= text_field_tag :username, nil, placeholder: "Username" %>
+  <%= password_field_tag :password, nil, placeholder: "Password" %>
+  <%= submit_tag "Login" %>
+<% end %>
